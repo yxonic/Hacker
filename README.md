@@ -5,7 +5,10 @@ At first, [moyo](http://liuxinyu.me/) designed and built it for Wordpress.
 Later, DaraW ported it to Hexo.
 
 ## Demo
-You can reference my blog: [DaraW](http://blog.daraw.cn/)
+You can also reference my blog: [DaraW](http://blog.daraw.cn/)  
+
+![](https://ooo.0o0.ooo/2016/08/04/57a306f56bee2.png
+)
 
 ## Installation
 Firstly get all the theme files, `git clone` or `download zip` is okay.  

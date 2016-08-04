@@ -6,7 +6,10 @@ __Hacker是一款专注于写作的简洁博客主题。在如此讲究复杂排
 由DaraW移植到Hexo。
 
 ## Demo
-参考我的博客：[DaraW](http://blog.daraw.cn/)
+参考我的博客：[DaraW](http://blog.daraw.cn/)  
+
+![](https://ooo.0o0.ooo/2016/08/04/57a306f56bee2.png
+)
 
 ## 安装
 获得主题文件， `git clone`或者`download zip`均可；  
