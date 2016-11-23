@@ -51,12 +51,15 @@ googleTrackId:
 `googleTrackId`: your Google Analytics ID, Hacker will not use Google Analytics if it's empty.
 
 ## Update
+### v1.0.1
+* fix incorrect comment link on the home page
+
 ### v1.0
 * fix bug caused by subdirectory([issue#10](https://github.com/CodeDaraW/Hacker/issues/10))
 * fix display of `code` tag
 
 
-### v0.3
+### v0.3.
 * Refactor ejs template files
 * Replace css with stylus
 * Add English Version README
