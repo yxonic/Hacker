@@ -1,9 +1,10 @@
-# Hacker | [English README](/README.md)
+# Hacker | [English Docs](/README.md)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)  [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-2.0)  
+
 
 __Hacker是一款专注于写作的简洁博客主题。在如此讲究复杂排版的趋势下，选择回归本源，专注于写作这件事。__  
 
-一开始是[moyo](http://liuxinyu.me/)为Wordpress所创作的一个主题，  
-由DaraW移植到Hexo。
+一开始是[moyo](http://liuxinyu.me/)为Wordpress所创作的一个主题，由DaraW移植到Hexo。
 
 ## Demo
 参考我的博客：[DaraW](http://blog.daraw.cn/)  
@@ -26,6 +27,7 @@ theme: Hacker
 __注意：版本更新后建议在hexo生成前执行一次`hexo clean`，清除以前的缓存，避免带来的一些莫名其妙的问题。__
 
 ## 配置
+### 启用评论和谷歌分析
 在主题配置文件`_config.yml`中：
 
 ```yaml
@@ -50,7 +52,39 @@ googleTrackId:
 
 `googleTrackId`: `string`，为谷歌分析的个人ID，留空则为不使用谷歌分析。
 
+### 启用分类和标签页面
+分类功能：执行`hexo new page categories`，然后修改生成的`source/categories/index.md`：
+``` markdown
+title: categories
+date: 2017-01-30 19:16:17
+layout: "categories"
+---  
+```
+如果你需要关闭该页的评论，可以添加一行`comments: false`；`title`对应的则是该页的标题。  
+
+标签功能：同理，执行`hexo new page tags`，然后修改生成的`source/tags/index.md`：
+``` markdown
+title: tags
+date: 2017-01-30 19:16:17
+layout: "tags"
+---  
+```
+配置同分类功能。
+
+在菜单中添加链接：编辑主题的`_config.yml`，在`menu`中添加`Categories: /categories`和`Tags: /tags`，如下：
+``` yml
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+```
+
 ## 更新
+### v1.1.0
+* 增加对关闭文章评论的支持([issue#14](https://github.com/CodeDaraW/Hacker/issues/14))
+* 增加对分类和标签的支持([issue#7](https://github.com/CodeDaraW/Hacker/issues/7))
+
 ### v1.0.1
 * 修复了主页上错误的评论链接
 
@@ -73,4 +107,4 @@ googleTrackId:
 
 
 ## 协议
-GPL(General Public License)
+GNU GPL(General Public License) v2.0
