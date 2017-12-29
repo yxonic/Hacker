@@ -1,4 +1,4 @@
-$hackerRed = #f03838
+
 $hackerGray = #9e9e9e
 $articleTitleColor = #212121
 $articleTextColor = #424242
@@ -8,7 +8,7 @@ article
   padding 8rem 0
 
   a
-    color $hackerRed
+    color themeColor
 
   &:not(:first-child):before
     content ''
@@ -24,7 +24,7 @@ article
     margin 6rem 2rem
     padding-left 15px
     line-height 2rem
-    border-left 4px solid $hackerRed
+    border-left 4px solid themeColor
 
   .article-title
     position relative
@@ -43,13 +43,13 @@ article
         padding-bottom 3px
         -webkit-transition 0.15s
         transition 0.15s
-        box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0)
+        box-shadow inset 0 -2px 0 themeColorRgb
 
       &:hover
         color $articleTitleColor
 
         span
-          box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0.4)
+          box-shadow inset 0 -2px 0 themeColorRgba(0.4)
 
   .article-top-meta
     position relative
@@ -64,7 +64,7 @@ article
     a
       color $hackerGray
       &:hover
-        color $hackerRed
+        color themeColor
 
       time
         font-style italic
@@ -107,7 +107,7 @@ article
       a
         color $hackerGray
         &:hover
-          color $hackerRed
+          color themeColor
 
       i
         vertical-align middle
@@ -131,7 +131,7 @@ article
     padding 2px 4px
     margin-left 2px
     margin-right 2px
-    color #c7254e
+    color themeColor
     white-space normal
     border-radius 0
 

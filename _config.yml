@@ -1,14 +1,15 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 
 # duoshuo comment
 duoshuo: false
 duoshuo_name:
 
 # disqus comment
-disqus: false
-disqus_shortname:
+disqus: true
+disqus_shortname: yxonata
 
 # google analytics
 googleTrackId:
